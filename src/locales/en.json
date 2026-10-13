@@ -1,0 +1,477 @@
+{
+  "common": {
+    "appName": "DayPilot",
+    "save": "Save",
+    "saved": "Saved",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "edit": "Edit",
+    "add": "Add",
+    "create": "Create",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "done": "Done",
+    "pending": "Pending",
+    "status": "Status",
+    "actions": "Actions",
+    "confirm": "Confirm",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "noData": "No data available",
+    "refresh": "Refresh",
+    "snooze": "Snooze",
+    "remindMeLater": "Remind me later",
+    "time": "Time",
+    "date": "Date",
+    "category": "Category",
+    "priority": "Priority",
+    "reminder": "Reminder",
+    "offlineNotice": "You're currently offline. Changes are saved locally.",
+    "installApp": "Install App",
+    "installed": "App Installed",
+    "units": {
+      "minutes": "min",
+      "hours": "hr",
+      "days": "days"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "habits": "Habits",
+    "templates": "Templates",
+    "guide": "Help Guide",
+    "settings": "Settings",
+    "logout": "Sign Out"
+  },
+  "auth": {
+    "welcomeTitle": "Master Your Day with DayPilot",
+    "welcomeSubtitle": "Smart daily planning, habit routines & reliable reminders built for your pace.",
+    "signInTab": "Sign In",
+    "signUpTab": "Create Account",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "displayNameLabel": "Your Name",
+    "displayNamePlaceholder": "Rahul Sharma",
+    "signInButton": "Sign In to DayPilot",
+    "signUpButton": "Create Free Account",
+    "authenticating": "Connecting...",
+    "orContinueWith": "or continue with",
+    "googleSignIn": "Continue with Google",
+    "selectLanguage": "Language",
+    "passwordHint": "Use at least 6 characters with a secure password",
+    "termsAgree": "By signing up, you agree to our Terms and Data Privacy.",
+    "alreadyHaveAccount": "Already have an account? Sign In",
+    "dontHaveAccount": "Don't have an account? Sign Up"
+  },
+  "home": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "greetingNight": "Good night",
+    "todayOverview": "Today's Overview",
+    "pendingTasks": "Pending Tasks",
+    "completedTasks": "Completed",
+    "habitsToday": "Habits Tracked",
+    "streak": "Current Streak",
+    "days": "days",
+    "quickAdd": "Quick Add Task",
+    "quickAddPlaceholder": "What do you want to accomplish today?",
+    "noTasksToday": "You're all caught up for today! 🎉",
+    "noTasksSubtitle": "Add a task or pick a ready-made template to get started.",
+    "upcomingReminders": "Upcoming Reminders",
+    "viewAll": "View all",
+    "progress": "Daily Progress",
+    "tasksRemaining": "{{count}} tasks left"
+  },
+  "tasks": {
+    "title": "Tasks & Reminders",
+    "pageTitle": "Task Management",
+    "pageSubtitle": "Organize, prioritize, and track your daily reminders",
+    "addTask": "Add Task",
+    "newTask": "New Task",
+    "editTask": "Edit Task",
+    "taskTitle": "Task Title",
+    "taskTitlePlaceholder": "e.g., Pay electricity bill",
+    "description": "Description & Notes",
+    "descriptionPlaceholder": "Add optional notes, link or checklist...",
+    "dueDate": "Due Date",
+    "dueTime": "Due Time",
+    "priorityLabel": "Priority Level",
+    "categoryLabel": "Category",
+    "recurrenceLabel": "Repeat / Recurrence",
+    "recurrenceNone": "Does not repeat",
+    "recurrenceDaily": "Daily",
+    "recurrenceWeekly": "Weekly",
+    "recurrenceMonthly": "Monthly",
+    "recurrenceCustom": "Custom",
+    "reminderLevelLabel": "Reminder Alert Style",
+    "reminderStyle": {
+      "standard": "Standard notification",
+      "persistent": "Persistent (re-alerts until Done)",
+      "silent": "Silent notification",
+      "normal": "Normal notification",
+      "important": "Important notification"
+    },
+    "priorities": {
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority",
+      "urgent": "Urgent"
+    },
+    "markDone": "Mark Done",
+    "markIncomplete": "Mark Incomplete",
+    "snoozeOptions": "Snooze Reminder",
+    "snooze5Min": "5 minutes",
+    "snooze10Min": "10 minutes",
+    "snooze15Min": "15 minutes",
+    "snooze30Min": "30 minutes",
+    "snooze1Hour": "1 hour",
+    "deleteConfirmTitle": "Delete Task",
+    "deleteConfirmMessage": "Are you sure you want to delete this task? This action cannot be undone.",
+    "saveAsTemplate": "Save as Personal Template",
+    "filterAll": "All Tasks",
+    "filterPending": "Pending",
+    "filterCompleted": "Completed",
+    "noTasksFound": "No tasks match your search or filter",
+    "overdue": "Overdue",
+    "overdueCount": "{{count}} Overdue",
+    "postponeTomorrow": "Postpone to Tomorrow",
+    "searchPlaceholder": "Search tasks by title or notes..."
+  },
+  "categories": {
+    "title": "Categories",
+    "work": "Work & Business",
+    "personal": "Personal",
+    "health": "Health & Personal Care",
+    "fitness": "Workout & Fitness",
+    "study": "Study & Learning",
+    "finance": "Finance",
+    "chores": "Chores",
+    "wellbeing": "Digital Wellbeing",
+    "reading": "Reading & Books",
+    "family": "Family & Friends",
+    "birthdays": "Birthdays & Special Events",
+    "habitsCategory": "Daily Habits",
+    "other": "Other",
+    "addCategory": "Add Category",
+    "newCategory": "New Custom Category",
+    "editCategory": "Edit Category",
+    "categoryName": "Category Name",
+    "categoryColor": "Color",
+    "accentColor": "Accent Color",
+    "selectIcon": "Select Icon",
+    "deleteCategoryConfirm": "Delete this category?"
+  },
+  "calendar": {
+    "title": "Calendar & Schedule",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "noTasksOnDate": "No tasks scheduled for this day.",
+    "scheduleTask": "Schedule Task",
+    "todayButton": "Today",
+    "quickJump": "Quick Jump"
+  },
+  "habits": {
+    "title": "Habits Tracker",
+    "subtitle": "Build consistency with daily check-ins, targets, and streaks",
+    "addHabit": "New Habit",
+    "editHabit": "Edit Habit",
+    "habitName": "Habit Name",
+    "habitNamePlaceholder": "e.g., Morning 20 min walk",
+    "frequency": "Frequency",
+    "frequencies": {
+      "daily": "Daily",
+      "weekdays": "Weekdays (Mon-Fri)",
+      "weekends": "Weekends (Sat-Sun)",
+      "custom": "Custom Days"
+    },
+    "targetGoal": "Daily Target / Goal (Optional)",
+    "targetGoalPlaceholder": "e.g. 20 mins, 2 liters, 50 pages",
+    "target": "Target",
+    "reminderTime": "Daily Reminder Time (Optional)",
+    "streakDays": "{{count}} day streak",
+    "bestStreak": "Best: {{count}}d",
+    "weeklyDone": "{{done}}/7 this week",
+    "todayCompleted": "Done Today",
+    "checkIn": "Check In",
+    "markDone": "Complete",
+    "undo": "Undo",
+    "noHabits": "No habits created yet",
+    "noHabitsDesc": "Start building consistent routines with daily tracking and streaks.",
+    "createFirstHabit": "Create Your First Habit",
+    "archiveHabit": "Archive Habit",
+    "deleteTitle": "Delete Habit",
+    "deleteMessage": "Are you sure you want to delete this habit? Past check-in history will be removed.",
+    "saved": "Habit saved successfully"
+  },
+  "templates": {
+    "title": "Task Templates",
+    "subtitle": "Add ready-made curated habits and tasks to your day in a single tap.",
+    "allCategories": "All Categories",
+    "curatedTab": "Curated Templates",
+    "savedTab": "Personal Saved Templates",
+    "savedSubtitle": "Templates saved from your custom tasks or created directly",
+    "addInOneTap": "Add in 1-Tap",
+    "editAndAdd": "Edit & Add",
+    "createPersonal": "New Personal Template",
+    "templateName": "Template Name",
+    "templateNamePlaceholder": "e.g., Sunday House Deep Clean",
+    "saveCurrentTask": "Save as Template",
+    "addedToTasks": "Task added to your planner!",
+    "noTemplatesFound": "No templates match your search.",
+    "groups": {
+      "health": "Health & Wellness",
+      "fitness": "Fitness & Movement",
+      "study": "Study & Learning",
+      "work": "Work & Productivity",
+      "personal": "Personal & Life",
+      "digitalWellbeing": "Digital Wellbeing"
+    },
+    "chips": {
+      "every2Hrs": "Every 2 Hrs",
+      "every45Min": "Every 45 Min",
+      "yearly": "Yearly",
+      "daily": "Daily",
+      "weekdays": "Weekdays",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "items": {
+      "drinkWater": {
+        "title": "Drink water every 2 hours",
+        "desc": "Keep your body hydrated. Drink a full glass of water (approx. 250ml) to stay refreshed and energized."
+      },
+      "takeMedicine": {
+        "title": "Take medicine",
+        "desc": "Take your prescribed daily medications and vitamins with a full glass of water after meals."
+      },
+      "stretchBreak": {
+        "title": "Stretch break",
+        "desc": "Stand up, roll shoulders back, stretch neck, spine, and hamstrings to release tension from sitting."
+      },
+      "windDown": {
+        "title": "Night wind-down & sleep prep",
+        "desc": "Dim the room lights, turn off notifications, and prep for 8 restful hours of sleep."
+      },
+      "morningWorkout": {
+        "title": "Morning workout",
+        "desc": "Complete 30-45 minutes of strength training, calisthenics, HIIT, or mobility exercises."
+      },
+      "eveningWalk": {
+        "title": "Evening walk",
+        "desc": "Take a relaxing 20-30 minute walk outdoors to digest, relax your mind, and reach your daily step count."
+      },
+      "coreMobility": {
+        "title": "Core & mobility session",
+        "desc": "Spend 15 minutes targeting core stability, hip openers, and lower back relief."
+      },
+      "reviseNotes": {
+        "title": "Revise notes",
+        "desc": "Active recall and spaced repetition session on today's lecture notes, articles, or flashcards."
+      },
+      "read20Pages": {
+        "title": "Read 20 pages",
+        "desc": "Read 20 pages of your current non-fiction book, technical paper, or personal development reading."
+      },
+      "languageDrill": {
+        "title": "Language or vocabulary drill",
+        "desc": "15 minutes of immersive listening or flashcard practice in your target language."
+      },
+      "dailyPlanning": {
+        "title": "Daily planning 9 AM",
+        "desc": "Identify the top 3 must-win goals for today, review calendar appointments, and triage urgent emails."
+      },
+      "weeklyReview": {
+        "title": "Weekly review",
+        "desc": "Audit completed tasks, reconcile pending deliverables, log accomplishments, and plan the upcoming week."
+      },
+      "inboxZero": {
+        "title": "Inbox triage & zero check",
+        "desc": "Archive resolved threads, snooze non-urgent questions, and reply to priority correspondence."
+      },
+      "callFamily": {
+        "title": "Call family",
+        "desc": "Call parents, grandparents, or siblings to check in, share updates, and nurture family bonds."
+      },
+      "payBills": {
+        "title": "Pay bills monthly",
+        "desc": "Pay utility bills, credit card statements, rent/mortgage, subscriptions, and update your personal budget."
+      },
+      "birthdayYearly": {
+        "title": "Birthday yearly",
+        "desc": "Send sincere birthday greetings, card, or gifts to celebrate special milestones."
+      },
+      "homeDeclutter": {
+        "title": "Weekly home reset & declutter",
+        "desc": "Clean desks, do laundry, take out recycling, and restock home essentials."
+      },
+      "scrollingBreak": {
+        "title": "Take a break from scrolling",
+        "desc": "Look away from the screen for at least 2 minutes. Focus on an object 20 feet away (20-20-20 rule) and blink gently."
+      },
+      "screenCurfew": {
+        "title": "Night screen curfew",
+        "desc": "Put all mobile phones, tablets, and laptops in another room 45 minutes before sleep to avoid blue light disruption."
+      }
+    }
+  },
+  "captions": {
+    "title": "Smart Reminders & Captions",
+    "subtitle": "Adaptive reminders that speak like a caring friend and get firmer when tasks slip.",
+    "enableCaptions": "Smart Adaptive Captions",
+    "enableCaptionsDesc": "Show escalation messages on missed or snoozed tasks and within the snooze dialog.",
+    "intensity": "Caption Escalation Tone",
+    "gentle": "Gentle Nudge",
+    "gentleDesc": "Level 1 only: Friendly, patient encouragement.",
+    "friendly": "Firm & Caring (Default)",
+    "friendlyDesc": "Levels 1 & 2: Gets firmer after snoozes.",
+    "roast": "Friend Roast",
+    "roastDesc": "Levels 1, 2 & 3: Tough love and funny roasts for chronic procrastination.",
+    "maxSnoozes": "Max Snoozes Before Action",
+    "maxSnoozesDesc": "After reaching this limit, snoozing is locked until you complete or move the task.",
+    "snoozeCountLabel": "Snooze {{current}} of {{max}} used",
+    "snoozeLimitReachedDesc": "Snooze limit reached ({{max}} times). You must either tackle it now or move it to tomorrow.",
+    "doItNow": "Do it now",
+    "moveToTomorrow": "Move to tomorrow",
+    "gentleLevel": "Friendly Nudge (Level 1)",
+    "firmLevel": "Firm Alert (Level 2)",
+    "roastLevel": "Friend Roast (Level 3)",
+    "previewTitle": "In-App Caption Preview",
+    "previewDesc": "Test how your reminders sound in {{language}}. This is an in-app preview, not a real notification.",
+    "showAnother": "Show another",
+    "seedButton": "Seed Captions to Firestore (Developer)",
+    "seedSuccess": "Seeded {{count}} captions to Firestore successfully.",
+    "tonesTitle": "Notification Alert Tone",
+    "toneChime": "Classic Chime",
+    "toneSoft": "Soft Bell",
+    "toneAlert": "Urgent Alert",
+    "toneVoice": "Voice Reads Caption",
+    "toneSilent": "Silent",
+    "readAloud": "Read caption aloud on alert",
+    "androidSoundNote": "Note: Custom tones and voice reading work in the native Android app. The web browser version triggers your device's default push notification sound."
+  },
+  "guide": {
+    "title": "How to Use DayPilot",
+    "subtitle": "Master your schedule, reliable reminders, and habit streaks.",
+    "searchPlaceholder": "Search guide, tips, and FAQ...",
+    "featuresTitle": "Features & Workflows",
+    "faqTitle": "Frequently Asked Questions",
+    "troubleshootingTitle": "Reminder Troubleshooting Checklist",
+    "drawOverOtherAppsTitle": "Getting Reminders While Using Other Apps",
+    "drawOverOtherAppsBody": "Web browsers running on mobile and desktop cannot draw pop-up overlays over other applications due to operating system security sandboxes. To receive guaranteed alerts while using other apps, install DayPilot as a PWA and enable Push Notifications."
+  },
+  "settings": {
+    "title": "Settings & Preferences",
+    "subtitle": "Customize notifications, captions, localization, appearance, and your data.",
+    "language": {
+      "title": "Language & Localization",
+      "subtitle": "Choose your preferred language for the whole DayPilot experience.",
+      "label": "Display Language",
+      "updated": "Language preference updated."
+    },
+    "profile": {
+      "title": "Account & Profile",
+      "displayName": "Display Name",
+      "email": "Email Address",
+      "saveProfile": "Update Name",
+      "resetPassword": "Reset Password",
+      "logout": "Log Out"
+    },
+    "appearance": {
+      "title": "Theme & Appearance",
+      "subtitle": "Choose between Light, Dark, or System automatic theme",
+      "themeLabel": "App Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System Default"
+    },
+    "dateTime": {
+      "title": "Date & Time Preferences",
+      "weekStartsOn": "Week Starts On",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "clockFormat": "Clock Format",
+      "twelveHour": "12-Hour (e.g. 2:30 PM)",
+      "twentyFourHour": "24-Hour (e.g. 14:30)",
+      "dateFormat": "Date Format",
+      "timezone": "Time Zone",
+      "autoDetect": "Auto-Detect"
+    },
+    "reminders": {
+      "title": "Notifications & Web Push",
+      "subtitle": "Real Firebase Cloud Messaging (FCM) web push & scheduled alerts.",
+      "permissionStatus": "Browser Notification Permission",
+      "granted": "Granted (Ready)",
+      "denied": "Denied in Browser",
+      "default": "Not Requested Yet",
+      "unsupported": "Not Supported in this Browser",
+      "requestPermission": "Enable Push Notifications",
+      "sendTestPush": "Send Real Test Notification",
+      "testingNotification": "Sending Real FCM Test Push...",
+      "activeTokens": "Active Registered Push Devices",
+      "noTokens": "No registered push devices for this account.",
+      "defaultSnooze": "Default Snooze Duration",
+      "defaultReminders": "Default Task Reminders",
+      "atTimeOfEvent": "At time of event",
+      "tenMinBefore": "10 minutes before",
+      "oneHourBefore": "1 hour before",
+      "oneDayBefore": "1 day before",
+      "minutes": "{{count}} minutes",
+      "maxSnoozeCount": "Max Snooze Limit",
+      "maxSnoozeDesc": "After this limit, you must complete or move the task.",
+      "persistentInterval": "Persistent Re-Alert Interval",
+      "batteryGuide": "Battery Optimization Guide (Android/iOS)",
+      "iosHomeNote": "iOS Users: Add to Home Screen first to enable Web Push",
+      "notificationHealth": "Notification Delivery Health Log",
+      "emptyLogs": "No push delivery records logged yet."
+    },
+    "categoriesSection": {
+      "title": "Categories & Tags",
+      "subtitle": "Manage built-in and personal custom categories",
+      "add": "New Category",
+      "builtInTag": "Built-in",
+      "customTag": "Custom"
+    },
+    "data": {
+      "title": "Data Management & Privacy",
+      "exportData": "Export My Data (JSON)",
+      "exporting": "Exporting...",
+      "deleteAccount": "Delete Account & All Data",
+      "deleteAccountDesc": "Permanently wipe your account, tasks, habits, and cloud settings.",
+      "confirmDeleteTitle": "Delete Account and Wipe All Data?",
+      "confirmDeleteMessage": "This action is irreversible. All your tasks, habits, categories, reminders, and user records will be permanently erased."
+    },
+    "saveAll": "Save Preferences"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "networkError": "Network connection error. Check your internet.",
+    "authFailed": "Authentication failed. Please check your credentials.",
+    "permissionDenied": "Notification permission was denied in your browser settings.",
+    "fcmNotConfigured": "Firebase Cloud Messaging VAPID key is missing in configuration.",
+    "taskNotFound": "Task not found."
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email address",
+    "passwordMin": "Password must be at least 6 characters",
+    "nameRequired": "Please provide your name"
+  }
+}

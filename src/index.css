@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-elevated: #f1f5f9;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-subtle: #eef2ff;
+  --success: #10b981;
+  --success-subtle: #ecfdf5;
+  --warning: #f59e0b;
+  --warning-subtle: #fffbeb;
+  --danger: #ef4444;
+  --danger-subtle: #fef2f2;
+
+  --bg-primary: var(--background);
+  --bg-surface: var(--surface);
+  --bg-surface-elevated: var(--surface-elevated);
+  --border-color: var(--border);
+}
+
+.dark {
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-elevated: #27272a;
+  --border: #27272a;
+  --border-subtle: #1e1e24;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-subtle: #1e1b4b;
+  --success: #10b981;
+  --success-subtle: #064e3b;
+  --warning: #f59e0b;
+  --warning-subtle: #451a03;
+  --danger: #ef4444;
+  --danger-subtle: #450a0a;
+
+  --bg-primary: var(--background);
+  --bg-surface: var(--surface);
+  --bg-surface-elevated: var(--surface-elevated);
+  --border-color: var(--border);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-subtle: var(--primary-subtle);
+  --color-success: var(--success);
+  --color-success-subtle: var(--success-subtle);
+  --color-warning: var(--warning);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-danger: var(--danger);
+  --color-danger-subtle: var(--danger-subtle);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Inter', sans-serif;
+}

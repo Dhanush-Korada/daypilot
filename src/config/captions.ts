@@ -1,0 +1,655 @@
+export interface SeedCaption {
+  id: string;
+  language: 'en' | 'te' | 'hi' | 'te-Latn' | 'hi-Latn';
+  level: 1 | 2 | 3;
+  context: 'task';
+  text: string;
+  active: boolean;
+}
+
+export const SEED_CAPTIONS: SeedCaption[] = [
+  // ==========================================
+  // ENGLISH (en) - 15 total (5 per level)
+  // ==========================================
+  // Level 1: Friendly nudge
+  {
+    id: 'en-l1-01',
+    language: 'en',
+    level: 1,
+    context: 'task',
+    text: "Hey {name}, it's time for \"{task}\". Let's get it done!",
+    active: true,
+  },
+  {
+    id: 'en-l1-02',
+    language: 'en',
+    level: 1,
+    context: 'task',
+    text: "Quick reminder for {name}: \"{task}\" is up next.",
+    active: true,
+  },
+  {
+    id: 'en-l1-03',
+    language: 'en',
+    level: 1,
+    context: 'task',
+    text: "A friendly tap on the shoulder, {name}! Time to tackle \"{task}\".",
+    active: true,
+  },
+  {
+    id: 'en-l1-04',
+    language: 'en',
+    level: 1,
+    context: 'task',
+    text: "Ready to cross \"{task}\" off your list today, {name}?",
+    active: true,
+  },
+  {
+    id: 'en-l1-05',
+    language: 'en',
+    level: 1,
+    context: 'task',
+    text: "Small steps win the day, {name}. Let's knock out \"{task}\".",
+    active: true,
+  },
+
+  // Level 2: Firm
+  {
+    id: 'en-l2-01',
+    language: 'en',
+    level: 2,
+    context: 'task',
+    text: "{name}, you already pushed \"{task}\" {snoozeCount} times. Today is the day.",
+    active: true,
+  },
+  {
+    id: 'en-l2-02',
+    language: 'en',
+    level: 2,
+    context: 'task',
+    text: "No more putting it off, {name}. \"{task}\" has been waiting {minutes} minutes.",
+    active: true,
+  },
+  {
+    id: 'en-l2-03',
+    language: 'en',
+    level: 2,
+    context: 'task',
+    text: "{name}, remember why you scheduled \"{task}\"? Let's handle it now.",
+    active: true,
+  },
+  {
+    id: 'en-l2-04',
+    language: 'en',
+    level: 2,
+    context: 'task',
+    text: "Snoozing won't finish \"{task}\", {name}. Five focused minutes will.",
+    active: true,
+  },
+  {
+    id: 'en-l2-05',
+    language: 'en',
+    level: 2,
+    context: 'task',
+    text: "Hey {name}, \"{task}\" is piling up on your schedule. Don't let it slip.",
+    active: true,
+  },
+
+  // Level 3: Friend roast
+  {
+    id: 'en-l3-01',
+    language: 'en',
+    level: 3,
+    context: 'task',
+    text: "{name}, \"{task}\" is still waiting. Why did you even add it? Finish it before the excuses start.",
+    active: true,
+  },
+  {
+    id: 'en-l3-02',
+    language: 'en',
+    level: 3,
+    context: 'task',
+    text: "At this rate, {name}, \"{task}\" will qualify for a pension. Just click done already!",
+    active: true,
+  },
+  {
+    id: 'en-l3-03',
+    language: 'en',
+    level: 3,
+    context: 'task',
+    text: "Look {name}, you snoozed {snoozeCount} times. Are you doing \"{task}\" or writing a biography on it?",
+    active: true,
+  },
+  {
+    id: 'en-l3-04',
+    language: 'en',
+    level: 3,
+    context: 'task',
+    text: "Your planner called, {name}. It wants to know if \"{task}\" is a goal or modern art.",
+    active: true,
+  },
+  {
+    id: 'en-l3-05',
+    language: 'en',
+    level: 3,
+    context: 'task',
+    text: "{name}, future you is begging current you to just finish \"{task}\" right this second.",
+    active: true,
+  },
+
+  // ==========================================
+  // TELUGU (te) - 15 total (5 per level)
+  // ==========================================
+  // Level 1: Friendly nudge
+  {
+    id: 'te-l1-01',
+    language: 'te',
+    level: 1,
+    context: 'task',
+    text: "నమస్తే {name}, \"{task}\" సమయం అయింది. రండి పూర్తి చేద్దాం!",
+    active: true,
+  },
+  {
+    id: 'te-l1-02',
+    language: 'te',
+    level: 1,
+    context: 'task',
+    text: "{name}, మీ తదుపరి పని \"{task}\" సిద్ధంగా ఉంది. ప్రారంభించండి.",
+    active: true,
+  },
+  {
+    id: 'te-l1-03',
+    language: 'te',
+    level: 1,
+    context: 'task',
+    text: "చిన్న గుర్తుచేంపు {name}! \"{task}\" పూర్తి చేయడానికి ఇదే సరైన సమయం.",
+    active: true,
+  },
+  {
+    id: 'te-l1-04',
+    language: 'te',
+    level: 1,
+    context: 'task',
+    text: "{name}, ఈరోజు \"{task}\" ని విజయవంతంగా ముగించేద్దామా?",
+    active: true,
+  },
+  {
+    id: 'te-l1-05',
+    language: 'te',
+    level: 1,
+    context: 'task',
+    text: "ప్రణాళిక ప్రకారం సాగండి {name}. \"{task}\" పూర్తి చేసి రిలాక్స్ అవ్వండి.",
+    active: true,
+  },
+
+  // Level 2: Firm
+  {
+    id: 'te-l2-01',
+    language: 'te',
+    level: 2,
+    context: 'task',
+    text: "{name}, మీరు ఇప్పటికే \"{task}\" ని {snoozeCount} సార్లు వాయిదా వేశారు. ఇప్పుడే పూర్తి చేయండి.",
+    active: true,
+  },
+  {
+    id: 'te-l2-02',
+    language: 'te',
+    level: 2,
+    context: 'task',
+    text: "ఇక ఆలస్యం చేయవద్దు {name}. \"{task}\" గడువు ముగిసి {minutes} నిమిషాలు అయింది.",
+    active: true,
+  },
+  {
+    id: 'te-l2-03',
+    language: 'te',
+    level: 2,
+    context: 'task',
+    text: "{name}, మీరు మొదట ఎందుకు \"{task}\" ప్లాన్ చేసుకున్నారో గుర్తుచేసుకోండి. వెంటనే చేసేయండి.",
+    active: true,
+  },
+  {
+    id: 'te-l2-04',
+    language: 'te',
+    level: 2,
+    context: 'task',
+    text: "స్నూజ్ కొడితే పని అయిపోదు {name}. పది నిమిషాలు కేటాయించి \"{task}\" ముగించండి.",
+    active: true,
+  },
+  {
+    id: 'te-l2-05',
+    language: 'te',
+    level: 2,
+    context: 'task',
+    text: "{name}, బాకీ పనులు పెరిగిపోతున్నాయి. \"{task}\" ని ఇప్పుడు ఫినిష్ చేయండి.",
+    active: true,
+  },
+
+  // Level 3: Friend roast
+  {
+    id: 'te-l3-01',
+    language: 'te',
+    level: 3,
+    context: 'task',
+    text: "{name}, \"{task}\" ఇంకా ఎదురుచూస్తూనే ఉంది. చేయనప్పుడు అసలు ఎందుకు రాశారు? సాకులు చెప్పకుండా పూర్తి చేయండి!",
+    active: true,
+  },
+  {
+    id: 'te-l3-02',
+    language: 'te',
+    level: 3,
+    context: 'task',
+    text: "{name}, {snoozeCount} సార్లు స్నూజ్ కొట్టారు. \"{task}\" పని చేస్తున్నారా లేక కథ రాస్తున్నారా?",
+    active: true,
+  },
+  {
+    id: 'te-l3-03',
+    language: 'te',
+    level: 3,
+    context: 'task',
+    text: "{name}, ఆ ఫోన్ పక్కన పెట్టి \"{task}\" ఎప్పుడు పూర్తి చేస్తారో చెప్పండి!",
+    active: true,
+  },
+  {
+    id: 'te-l3-04',
+    language: 'te',
+    level: 3,
+    context: 'task',
+    text: "{name}, రేపు చేద్దాం అనే అలవాటును ఈరోజే మార్చుకోండి. \"{task}\" ని ఇప్పుడే డన్ చేయండి.",
+    active: true,
+  },
+  {
+    id: 'te-l3-05',
+    language: 'te',
+    level: 3,
+    context: 'task',
+    text: "ఇంకా ఎన్ని నోటిఫికేషన్లు పంపాలి {name}? వెంటనే \"{task}\" ముగించి సుఖంగా ఉండండి!",
+    active: true,
+  },
+
+  // ==========================================
+  // HINDI (hi) - 15 total (5 per level)
+  // ==========================================
+  // Level 1: Friendly nudge
+  {
+    id: 'hi-l1-01',
+    language: 'hi',
+    level: 1,
+    context: 'task',
+    text: "नमस्ते {name}, \"{task}\" का समय हो गया है। चलिए इसे पूरा करते हैं!",
+    active: true,
+  },
+  {
+    id: 'hi-l1-02',
+    language: 'hi',
+    level: 1,
+    context: 'task',
+    text: "{name}, आपका अगला टास्क \"{task}\" कतार में है। शुरू कीजिए।",
+    active: true,
+  },
+  {
+    id: 'hi-l1-03',
+    language: 'hi',
+    level: 1,
+    context: 'task',
+    text: "एक प्यारा सा रिमाइंडर {name}! \"{task}\" निपटाने का सही वक्त आ गया है।",
+    active: true,
+  },
+  {
+    id: 'hi-l1-04',
+    language: 'hi',
+    level: 1,
+    context: 'task',
+    text: "{name}, क्या आप आज \"{task}\" को पूरा करने के लिए तैयार हैं?",
+    active: true,
+  },
+  {
+    id: 'hi-l1-05',
+    language: 'hi',
+    level: 1,
+    context: 'task',
+    text: "छोटे-छोटे कदम बड़ी जीत दिलाते हैं {name}। \"{task}\" जल्दी से कर डालिए।",
+    active: true,
+  },
+
+  // Level 2: Firm
+  {
+    id: 'hi-l2-01',
+    language: 'hi',
+    level: 2,
+    context: 'task',
+    text: "{name}, आप \"{task}\" को {snoozeCount} बार टाल चुके हैं। आज ही इसे खत्म कीजिए।",
+    active: true,
+  },
+  {
+    id: 'hi-l2-02',
+    language: 'hi',
+    level: 2,
+    context: 'task',
+    text: "अब और देरी नहीं {name}। \"{task}\" {minutes} मिनट से आपका इंतज़ार कर रहा है।",
+    active: true,
+  },
+  {
+    id: 'hi-l2-03',
+    language: 'hi',
+    level: 2,
+    context: 'task',
+    text: "{name}, याद है ना यह टास्क क्यों जोड़ा था? बहाने छोड़िए और \"{task}\" कीजिए।",
+    active: true,
+  },
+  {
+    id: 'hi-l2-04',
+    language: 'hi',
+    level: 2,
+    context: 'task',
+    text: "स्नूज़ करने से टास्क खत्म नहीं होगा {name}। बस 10 मिनट लगाकर \"{task}\" निपटाएं।",
+    active: true,
+  },
+  {
+    id: 'hi-l2-05',
+    language: 'hi',
+    level: 2,
+    context: 'task',
+    text: "{name}, पेंडिंग काम बढ़ रहे हैं। \"{task}\" को अभी पूरा कर डालिए।",
+    active: true,
+  },
+
+  // Level 3: Friend roast
+  {
+    id: 'hi-l3-01',
+    language: 'hi',
+    level: 3,
+    context: 'task',
+    text: "{name}, \"{task}\" अभी भी अटका हुआ है। करना नहीं था तो जोड़ा क्यों? बहाने शुरू होने से पहले खत्म करो!",
+    active: true,
+  },
+  {
+    id: 'hi-l3-02',
+    language: 'hi',
+    level: 3,
+    context: 'task',
+    text: "{name}, {snoozeCount} बार स्नूज़ कर दिया! \"{task}\" पर काम हो रहा है या इस पर कोई रिसर्च चल रही है?",
+    active: true,
+  },
+  {
+    id: 'hi-l3-03',
+    language: 'hi',
+    level: 3,
+    context: 'task',
+    text: "अरे {name}, फोन का स्क्रॉलिंग बंद कीजिए और \"{task}\" को डन मार्क कीजिए!",
+    active: true,
+  },
+  {
+    id: 'hi-l3-04',
+    language: 'hi',
+    level: 3,
+    context: 'task',
+    text: "आपका प्लानर पूछ रहा है {name}, क्या \"{task}\" सिर्फ सजावट के लिए बनाया था?",
+    active: true,
+  },
+  {
+    id: 'hi-l3-05',
+    language: 'hi',
+    level: 3,
+    context: 'task',
+    text: "{name}, 'कल करेंगे' वाला कल आज ही है। अभी \"{task}\" खत्म करो और चैन की सांस लो।",
+    active: true,
+  },
+
+  // ==========================================
+  // TENGLISH (te-Latn) - 15 total (5 per level)
+  // ==========================================
+  // Level 1: Friendly nudge
+  {
+    id: 'telatn-l1-01',
+    language: 'te-Latn',
+    level: 1,
+    context: 'task',
+    text: "Hey {name}, \"{task}\" cheyadaniki time aindi. Padandi complete cheddam!",
+    active: true,
+  },
+  {
+    id: 'telatn-l1-02',
+    language: 'te-Latn',
+    level: 1,
+    context: 'task',
+    text: "{name}, nee next task \"{task}\" ready ga undi. Start cheyyi.",
+    active: true,
+  },
+  {
+    id: 'telatn-l1-03',
+    language: 'te-Latn',
+    level: 1,
+    context: 'task',
+    text: "Chinna reminder {name}! \"{task}\" ni finish cheyadaniki ide right time.",
+    active: true,
+  },
+  {
+    id: 'telatn-l1-04',
+    language: 'te-Latn',
+    level: 1,
+    context: 'task',
+    text: "{name}, ee roju \"{task}\" ni strike off cheddama?",
+    active: true,
+  },
+  {
+    id: 'telatn-l1-05',
+    language: 'te-Latn',
+    level: 1,
+    context: 'task',
+    text: "Steady ga vellu {name}. \"{task}\" finish chesi relax avvu.",
+    active: true,
+  },
+
+  // Level 2: Firm
+  {
+    id: 'telatn-l2-01',
+    language: 'te-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, nuvvu already \"{task}\" ni {snoozeCount} times push chesav. Ee roje finish cheyyi.",
+    active: true,
+  },
+  {
+    id: 'telatn-l2-02',
+    language: 'te-Latn',
+    level: 2,
+    context: 'task',
+    text: "Inka delay cheyoddu {name}. \"{task}\" due aipoyi {minutes} minutes aindi.",
+    active: true,
+  },
+  {
+    id: 'telatn-l2-03',
+    language: 'te-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, asalu \"{task}\" enduku schedule chesavo gurthunda? Ippude cheseyyi.",
+    active: true,
+  },
+  {
+    id: 'telatn-l2-04',
+    language: 'te-Latn',
+    level: 2,
+    context: 'task',
+    text: "Snooze kodithe pani aipodu {name}. Just 10 minutes petti \"{task}\" complete cheyyi.",
+    active: true,
+  },
+  {
+    id: 'telatn-l2-05',
+    language: 'te-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, pending tasks perigipotunnayi. \"{task}\" ni miss avvakunda cheseyyi.",
+    active: true,
+  },
+
+  // Level 3: Friend roast
+  {
+    id: 'telatn-l3-01',
+    language: 'te-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, \"{task}\" inka wait chestune undi. Cheyanappudu asalu enduku add chesav? Excuses aapesi finish cheyyi!",
+    active: true,
+  },
+  {
+    id: 'telatn-l3-02',
+    language: 'te-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, {snoozeCount} times snooze chesav. \"{task}\" chestunhava leka daani paina cinema theestunhava?",
+    active: true,
+  },
+  {
+    id: 'telatn-l3-03',
+    language: 'te-Latn',
+    level: 3,
+    context: 'task',
+    text: "Choodu {name}, scrolling aapi mundu \"{task}\" ni Done ani mark cheyyi!",
+    active: true,
+  },
+  {
+    id: 'telatn-l3-04',
+    language: 'te-Latn',
+    level: 3,
+    context: 'task',
+    text: "Nee DayPilot app adugutondi {name}, \"{task}\" show piece kosam pettava enti?",
+    active: true,
+  },
+  {
+    id: 'telatn-l3-05',
+    language: 'te-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, 'repu cheddam' ane roju ee roje. Ippude \"{task}\" chesi peace of mind techuko.",
+    active: true,
+  },
+
+  // ==========================================
+  // HINGLISH (hi-Latn) - 15 total (5 per level)
+  // ==========================================
+  // Level 1: Friendly nudge
+  {
+    id: 'hilatn-l1-01',
+    language: 'hi-Latn',
+    level: 1,
+    context: 'task',
+    text: "Hey {name}, \"{task}\" ka time ho gaya hai. Chalo fatafat finish karte hain!",
+    active: true,
+  },
+  {
+    id: 'hilatn-l1-02',
+    language: 'hi-Latn',
+    level: 1,
+    context: 'task',
+    text: "{name}, tumhara next task \"{task}\" line me hai. Shuru karo.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l1-03',
+    language: 'hi-Latn',
+    level: 1,
+    context: 'task',
+    text: "Ek gentle reminder {name}! \"{task}\" nipatane ka perfect time hai.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l1-04',
+    language: 'hi-Latn',
+    level: 1,
+    context: 'task',
+    text: "{name}, kya aaj \"{task}\" ko complete karne ke liye ready ho?",
+    active: true,
+  },
+  {
+    id: 'hilatn-l1-05',
+    language: 'hi-Latn',
+    level: 1,
+    context: 'task',
+    text: "Chhote steps se hi streak banti hai {name}. \"{task}\" nipta lo jaldi.",
+    active: true,
+  },
+
+  // Level 2: Firm
+  {
+    id: 'hilatn-l2-01',
+    language: 'hi-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, tum already \"{task}\" ko {snoozeCount} baar taal chuke ho. Aaj hi finish karo.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l2-02',
+    language: 'hi-Latn',
+    level: 2,
+    context: 'task',
+    text: "Ab aur delay nahi {name}. \"{task}\" {minutes} minutes se pending pada hai.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l2-03',
+    language: 'hi-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, yaad hai na ye task kyun schedule kiya tha? Bahane chhoro aur \"{task}\" karo.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l2-04',
+    language: 'hi-Latn',
+    level: 2,
+    context: 'task',
+    text: "Snooze dabane se task khatam nahi hota {name}. Bas 10 minute dekar \"{task}\" nipta lo.",
+    active: true,
+  },
+  {
+    id: 'hilatn-l2-05',
+    language: 'hi-Latn',
+    level: 2,
+    context: 'task',
+    text: "{name}, pending backlog badhta ja raha hai. \"{task}\" ko abhi nipatana padega.",
+    active: true,
+  },
+
+  // Level 3: Friend roast
+  {
+    id: 'hilatn-l3-01',
+    language: 'hi-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, \"{task}\" abhi bhi intezar kar raha hai. Karna nahi tha toh add kyun kiya? Bahane shuru hone se pehle khatam karo!",
+    active: true,
+  },
+  {
+    id: 'hilatn-l3-02',
+    language: 'hi-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, {snoozeCount} baar snooze maar diya! \"{task}\" kar rahe ho ya ispe PhD chal rahi hai?",
+    active: true,
+  },
+  {
+    id: 'hilatn-l3-03',
+    language: 'hi-Latn',
+    level: 3,
+    context: 'task',
+    text: "Arre {name}, phone scrolling band karo aur \"{task}\" ko Done mark karo pehle!",
+    active: true,
+  },
+  {
+    id: 'hilatn-l3-04',
+    language: 'hi-Latn',
+    level: 3,
+    context: 'task',
+    text: "Tumhara DayPilot planner puchh raha hai {name}, kya \"{task}\" sirf showpiece ke liye banaya tha?",
+    active: true,
+  },
+  {
+    id: 'hilatn-l3-05',
+    language: 'hi-Latn',
+    level: 3,
+    context: 'task',
+    text: "{name}, 'kal karenge' wala kal aaj hi hai. Abhi \"{task}\" niptao aur sukoon se raho.",
+    active: true,
+  },
+];

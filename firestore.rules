@@ -1,0 +1,132 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global safety catch-all: deny all unmatched paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Connectivity test probe
+    match /test/{docId} {
+      allow read: if true;
+    }
+
+    // Top-level global captions collection (readable by any signed-in user, NO client writes)
+    match /captions/{captionId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    // User document root
+    match /users/{userId} {
+      allow read, write: if isOwner(userId) && isValidId(userId);
+
+      // 1. Profile subcollection
+      match /profile/{profileId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(profileId)
+          && request.resource.data.email is string
+          && request.resource.data.email.size() <= 320;
+        allow delete: if isOwner(userId) && isValidId(profileId);
+      }
+
+      // 2. Categories subcollection
+      match /categories/{categoryId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(categoryId)
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0
+          && request.resource.data.name.size() <= 60
+          && request.resource.data.color is string
+          && request.resource.data.color.size() <= 30;
+        allow delete: if isOwner(userId) && isValidId(categoryId);
+      }
+
+      // 3. Tasks subcollection
+      match /tasks/{taskId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(taskId)
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0
+          && request.resource.data.title.size() <= 200
+          && request.resource.data.priority in ['low', 'medium', 'high']
+          && request.resource.data.status in ['pending', 'in_progress', 'completed', 'cancelled']
+          && request.resource.data.reminderLevel in ['normal', 'important', 'persistent'];
+        allow delete: if isOwner(userId) && isValidId(taskId);
+      }
+
+      // 4. Habits subcollection
+      match /habits/{habitId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(habitId)
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0
+          && request.resource.data.title.size() <= 200
+          && request.resource.data.frequency in ['daily', 'weekdays', 'weekends', 'custom'];
+        allow delete: if isOwner(userId) && isValidId(habitId);
+      }
+
+      // 5. Habit logs subcollection
+      match /habitLogs/{logId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(logId)
+          && request.resource.data.habitId is string
+          && request.resource.data.date is string
+          && request.resource.data.date.size() <= 10
+          && request.resource.data.completed is bool;
+        allow delete: if isOwner(userId) && isValidId(logId);
+      }
+
+      // 6. User templates subcollection
+      match /userTemplates/{templateId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(templateId)
+          && request.resource.data.name is string
+          && request.resource.data.name.size() > 0
+          && request.resource.data.name.size() <= 100
+          && request.resource.data.type in ['task', 'habit', 'routine'];
+        allow delete: if isOwner(userId) && isValidId(templateId);
+      }
+
+      // 7. Notification log subcollection
+      match /notificationLog/{logId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(logId)
+          && request.resource.data.message is string
+          && request.resource.data.message.size() <= 1000
+          && request.resource.data.status in ['sent', 'failed', 'dismissed'];
+        allow delete: if isOwner(userId) && isValidId(logId);
+      }
+
+      // 8. Push tokens subcollection
+      match /pushTokens/{tokenId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(tokenId)
+          && request.resource.data.token is string
+          && request.resource.data.token.size() <= 1024;
+        allow delete: if isOwner(userId) && isValidId(tokenId);
+      }
+
+      // 9. User settings subcollection
+      match /settings/{settingsId} {
+        allow read: if isOwner(userId);
+        allow create, update: if isOwner(userId) && isValidId(settingsId)
+          && request.resource.data.theme in ['light', 'dark', 'system'];
+        allow delete: if isOwner(userId) && isValidId(settingsId);
+      }
+    }
+  }
+}

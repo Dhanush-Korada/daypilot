@@ -1,0 +1,472 @@
+{
+  "common": {
+    "appName": "DayPilot",
+    "save": "Save cheyi",
+    "saved": "Save aindi",
+    "saving": "Save avtundi...",
+    "cancel": "Cancel",
+    "delete": "Delete cheyi",
+    "deleting": "Delete chestunnam...",
+    "edit": "Edit",
+    "add": "Add cheyi",
+    "create": "Create cheyi",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "search": "Search cheyyi",
+    "filter": "Filter",
+    "all": "Anni",
+    "today": "Ee roju",
+    "yesterday": "Ninna",
+    "tomorrow": "Repu",
+    "done": "Done",
+    "pending": "Pending",
+    "status": "Status",
+    "actions": "Actions",
+    "confirm": "Confirm cheyyi",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "noData": "Data em ledu",
+    "refresh": "Refresh",
+    "snooze": "Snooze cheyyi",
+    "remindMeLater": "Tarvata gurthucheyyi",
+    "time": "Time",
+    "date": "Date",
+    "category": "Category",
+    "priority": "Priority",
+    "reminder": "Reminder",
+    "offlineNotice": "Nuvvu offline lo unnav. Changes locally save ayyayi.",
+    "installApp": "App install chesuko",
+    "installed": "App install aindi"
+  },
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "habits": "Habits",
+    "templates": "Templates",
+    "guide": "Help Guide",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "auth": {
+    "welcomeTitle": "DayPilot tho nee roju plan chesuko",
+    "welcomeSubtitle": "Daily planning, habit streaks mariyu time ki accurate reminders.",
+    "signInTab": "Sign In",
+    "signUpTab": "Account Create Cheyyi",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "rahul@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "At least 6 characters",
+    "displayNameLabel": "Nee Peru",
+    "displayNamePlaceholder": "Rahul Sharma",
+    "signInButton": "DayPilot lo Sign In avvu",
+    "signUpButton": "Free Account Create Cheyyi",
+    "authenticating": "Connecting...",
+    "orContinueWith": "or deentho continue cheyyi",
+    "googleSignIn": "Google tho Continue avvu",
+    "selectLanguage": "Language",
+    "passwordHint": "Secure password kosam minimum 6 characters undali",
+    "termsAgree": "Sign up cheste nuvvu Terms & Privacy Policy ni accept chesinatte.",
+    "alreadyHaveAccount": "Already account unda? Sign In avvu",
+    "dontHaveAccount": "Account leda? Sign Up avvu"
+  },
+  "home": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "greetingNight": "Good night",
+    "todayOverview": "Ee Roju Overview",
+    "pendingTasks": "Pending Tasks",
+    "completedTasks": "Completed",
+    "habitsToday": "Habits Done Today",
+    "streak": "Current Streak",
+    "days": "days",
+    "quickAdd": "Quick Add Task",
+    "quickAddPlaceholder": "Ee roju em accomplish cheyalanukuntunnav?",
+    "noTasksToday": "Ee roju tasks anni aipoyayi! 🎉",
+    "noTasksSubtitle": "Kotha task add cheyyi leda ready-made template select chesuko.",
+    "upcomingReminders": "Upcoming Reminders",
+    "viewAll": "Anni choodu",
+    "progress": "Daily Progress",
+    "tasksRemaining": "{{count}} tasks migilayi"
+  },
+  "tasks": {
+    "title": "Tasks & Reminders",
+    "pageTitle": "Task Management",
+    "pageSubtitle": "Nee daily reminders ni organize chesuko, priority set cheyyi",
+    "addTask": "Task Add Cheyyi",
+    "newTask": "Kotha Task",
+    "editTask": "Task Edit Cheyyi",
+    "taskTitle": "Task Title",
+    "taskTitlePlaceholder": "e.g., Current bill kattali",
+    "description": "Notes & Description",
+    "descriptionPlaceholder": "Extra notes, link leda checklist add cheyyi...",
+    "dueDate": "Due Date",
+    "dueTime": "Time",
+    "priorityLabel": "Priority Level",
+    "categoryLabel": "Category",
+    "recurrenceLabel": "Repeat / Recurrence",
+    "recurrenceNone": "Repeat avvadu",
+    "recurrenceDaily": "Daily",
+    "recurrenceWeekly": "Weekly",
+    "recurrenceMonthly": "Monthly",
+    "recurrenceCustom": "Custom",
+    "reminderLevelLabel": "Reminder Alert Style",
+    "reminderStyle": {
+      "standard": "Standard notification",
+      "persistent": "Persistent (Done chesenthavaraku repeat avtundi)",
+      "silent": "Silent notification",
+      "normal": "Normal notification",
+      "important": "Important notification"
+    },
+    "priorities": {
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority",
+      "urgent": "Urgent"
+    },
+    "markDone": "Done mark cheyyi",
+    "markIncomplete": "Incomplete mark cheyyi",
+    "snoozeOptions": "Snooze Reminder",
+    "snooze5Min": "5 minutes",
+    "snooze10Min": "10 minutes",
+    "snooze15Min": "15 minutes",
+    "snooze30Min": "30 minutes",
+    "snooze1Hour": "1 hour",
+    "deleteConfirmTitle": "Task Delete Cheyyala?",
+    "deleteConfirmMessage": "Ee task ni nijamga delete cheyalanukuntunnava? Undo cheyalemu.",
+    "saveAsTemplate": "Personal Template ga Save Cheyyi",
+    "filterAll": "Anni Tasks",
+    "filterPending": "Pending",
+    "filterCompleted": "Completed",
+    "noTasksFound": "Tasks em dorakaledu",
+    "overdue": "Time aipoyindi",
+    "overdueCount": "{{count}} Overdue",
+    "postponeTomorrow": "Repatiki postpone cheyyi",
+    "searchPlaceholder": "Title leda notes lo search cheyyi..."
+  },
+  "categories": {
+    "title": "Categories",
+    "work": "Work & Business",
+    "personal": "Personal",
+    "health": "Health & Care",
+    "fitness": "Fitness & Workout",
+    "study": "Study & Learning",
+    "finance": "Finance & Bills",
+    "chores": "Inti Panulu",
+    "wellbeing": "Digital Wellbeing",
+    "reading": "Reading & Books",
+    "family": "Family & Friends",
+    "birthdays": "Birthdays & Events",
+    "habitsCategory": "Daily Habits",
+    "other": "Other",
+    "addCategory": "Category Add Cheyyi",
+    "newCategory": "Kotha Category",
+    "editCategory": "Category Edit Cheyyi",
+    "categoryName": "Category Peru",
+    "categoryColor": "Color",
+    "accentColor": "Accent Color",
+    "selectIcon": "Icon Select Cheyyi",
+    "deleteCategoryConfirm": "Ee category ni delete cheyyala?"
+  },
+  "calendar": {
+    "title": "Calendar & Schedule",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "noTasksOnDate": "Ee roju ki tasks em levu.",
+    "scheduleTask": "Task Schedule Cheyyi",
+    "todayButton": "Today",
+    "quickJump": "Quick Jump"
+  },
+  "habits": {
+    "title": "Habits Tracker",
+    "subtitle": "Daily check-ins, targets mariyu streaks tho consistency maintain cheyyi",
+    "addHabit": "Kotha Habit",
+    "editHabit": "Habit Edit Cheyyi",
+    "habitName": "Habit Peru",
+    "habitNamePlaceholder": "e.g., Udayam 20 mins walking",
+    "frequency": "Frequency",
+    "frequencies": {
+      "daily": "Daily",
+      "weekdays": "Weekdays (Mon-Fri)",
+      "weekends": "Weekends (Sat-Sun)",
+      "custom": "Select chesina days"
+    },
+    "targetGoal": "Daily Target / Goal (Optional)",
+    "targetGoalPlaceholder": "e.g. 20 mins, 2 liters, 50 pages",
+    "target": "Target",
+    "reminderTime": "Daily Reminder Time (Optional)",
+    "streakDays": "{{count}} days streak",
+    "bestStreak": "Best: {{count}}d",
+    "weeklyDone": "Ee week {{done}}/7 aipoyayi",
+    "todayCompleted": "Ee roju complete aindi",
+    "checkIn": "Check In avvu",
+    "markDone": "Done",
+    "undo": "Undo",
+    "noHabits": "Inka habits create cheyaledu",
+    "noHabitsDesc": "Daily tracking and streaks kosam nee first habit ni start cheyyi.",
+    "createFirstHabit": "First Habit Create Cheyyi",
+    "archiveHabit": "Archive Cheyyi",
+    "deleteTitle": "Habit Delete Cheyyala?",
+    "deleteMessage": "Ee habit ni delete cheste patha check-in logs anni pothayi.",
+    "saved": "Habit successfully save aindi"
+  },
+  "templates": {
+    "title": "Task Templates",
+    "subtitle": "Single tap tho ready-made habits and tasks ni nee planner ki add chesuko.",
+    "allCategories": "Anni Categories",
+    "curatedTab": "Ready-made Templates",
+    "savedTab": "Personal Saved Templates",
+    "savedSubtitle": "Nee own tasks nundi save chesina templates",
+    "addInOneTap": "1-Tap lo Add Cheyyi",
+    "editAndAdd": "Edit chesi Add Cheyyi",
+    "createPersonal": "Kotha Personal Template",
+    "templateName": "Template Peru",
+    "templateNamePlaceholder": "e.g., Sunday House Clean-up",
+    "saveCurrentTask": "Template ga Save Cheyyi",
+    "addedToTasks": "Planner lo task add aindi!",
+    "noTemplatesFound": "Templates em dorakaledu.",
+    "groups": {
+      "health": "Health & Wellness",
+      "fitness": "Fitness & Movement",
+      "study": "Study & Learning",
+      "work": "Work & Productivity",
+      "personal": "Personal & Life",
+      "digitalWellbeing": "Digital Wellbeing"
+    },
+    "chips": {
+      "every2Hrs": "Every 2 Hrs",
+      "every45Min": "Every 45 Min",
+      "yearly": "Yearly",
+      "daily": "Daily",
+      "weekdays": "Weekdays",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "items": {
+      "drinkWater": {
+        "title": "Prati 2 hours ki water thaagu",
+        "desc": "Body hydrated ga unchu. Fresh ga undataniki oka glass water thaagu."
+      },
+      "takeMedicine": {
+        "title": "Medicine vesuko",
+        "desc": "Food thinnaka doctor cheppina medicines and vitamins time ki vesuko."
+      },
+      "stretchBreak": {
+        "title": "Stretching break teesuko",
+        "desc": "Lechi nilabadi body ni koncham stretch cheyyi, stiffness taggutundi."
+      },
+      "windDown": {
+        "title": "Padukune mundu relax avvu",
+        "desc": "Lights dim chesi, phone side petti 8 hours manchi nidra ki prepare avvu."
+      },
+      "morningWorkout": {
+        "title": "Morning workout cheyyi",
+        "desc": "30-45 minutes workout, jogging leda yoga complete cheyyi."
+      },
+      "eveningWalk": {
+        "title": "Evening walk ki vellu",
+        "desc": "Mind relax avvataniki bayataki velli 20-30 minutes walk cheyyi."
+      },
+      "coreMobility": {
+        "title": "Core & mobility session",
+        "desc": "Back relief mariyu body flexibility kosam 15 mins exercises cheyyi."
+      },
+      "reviseNotes": {
+        "title": "Notes revise cheyyi",
+        "desc": "Ee roju chadivina topics and notes ni oka sari recall cheyyi."
+      },
+      "read20Pages": {
+        "title": "Book lo 20 pages chadavu",
+        "desc": "Current book nundi 20 pages concentration tho chadavu."
+      },
+      "languageDrill": {
+        "title": "Language practice cheyyi",
+        "desc": "Vocabulary leda language practice kosam 15 minutes spend cheyyi."
+      },
+      "dailyPlanning": {
+        "title": "Morning 9 AM planning",
+        "desc": "Ee roju cheyalsina top 3 tasks identify chesi calendar check cheyyi."
+      },
+      "weeklyReview": {
+        "title": "Weekly review chesuko",
+        "desc": "Completed tasks chusi next week plan ready chesuko."
+      },
+      "inboxZero": {
+        "title": "Inbox emails clear cheyyi",
+        "desc": "Important mails ki reply ichi migilinavi archive cheyyi."
+      },
+      "callFamily": {
+        "title": "Intlo vaallaki call cheyyi",
+        "desc": "Parents leda family tho matladi updates thelusuko."
+      },
+      "payBills": {
+        "title": "Monthly bills pay cheyyi",
+        "desc": "Current bill, rent, wifi bills kattesi budget update cheyyi."
+      },
+      "birthdayYearly": {
+        "title": "Birthday wish cheyyi",
+        "desc": "Close friends or family ki hearty birthday wishes cheppu."
+      },
+      "homeDeclutter": {
+        "title": "Weekly room clean cheyyi",
+        "desc": "Desk clean chesi, laundry complete chesi room set cheyyi."
+      },
+      "scrollingBreak": {
+        "title": "Screen nundi break teesuko",
+        "desc": "2 minutes screen pakkana petti dooranga unna object ni choodu."
+      },
+      "screenCurfew": {
+        "title": "Nidrapoye mundu screen aapeyi",
+        "desc": "Manchi nidra kosam padukune 45 mins mundhe phone pakkana petteyi."
+      }
+    }
+  },
+  "captions": {
+    "title": "Smart Reminders & Captions",
+    "subtitle": "Friend la matlade reminders, snooze cheste koncham firm ga cheptaayi.",
+    "enableCaptions": "Smart Adaptive Captions",
+    "enableCaptionsDesc": "Miss aina leda snooze chesina tasks paina motivational alert message choopinchu.",
+    "intensity": "Caption Escalation Level",
+    "gentle": "Gentle Nudge",
+    "gentleDesc": "Level 1 only: Friendly & patient encouragement.",
+    "friendly": "Firm & Caring (Default)",
+    "friendlyDesc": "Levels 1 & 2: Snooze cheste koncham firm ga untundi.",
+    "roast": "Friend Roast",
+    "roastDesc": "Levels 1, 2 & 3: Baddakam ekkuvaite funny roasts vestundi.",
+    "maxSnoozes": "Max Snoozes Before Action",
+    "maxSnoozesDesc": "Ee limit daatithe snooze aagipotundi; task complete cheyali leda repatiki marchali.",
+    "snoozeCountLabel": "{{max}} lo {{current}} snoozes aipoyayi",
+    "snoozeLimitReachedDesc": "Snooze limit ({{max}} times) aipoindi. Ippude complete cheyyi leda repatiki marchu.",
+    "doItNow": "Ippude cheyyi",
+    "moveToTomorrow": "Repatiki marchu",
+    "gentleLevel": "Friendly Nudge (Level 1)",
+    "firmLevel": "Firm Alert (Level 2)",
+    "roastLevel": "Friend Roast (Level 3)",
+    "previewTitle": "In-App Caption Preview",
+    "previewDesc": "{{language}} lo nee reminders ela sound chestayo choodu. Idi just preview, real notification kadu.",
+    "showAnother": "Inkokati choopinchu",
+    "seedButton": "Firestore ki Captions Load Cheyyi (Developer)",
+    "seedSuccess": "{{count}} captions Firestore loki successfully upload ayyayi.",
+    "tonesTitle": "Notification Sound Tone",
+    "toneChime": "Classic Chime",
+    "toneSoft": "Soft Bell",
+    "toneAlert": "Urgent Alert",
+    "toneVoice": "Voice Caption Chaduvutundi",
+    "toneSilent": "Silent",
+    "readAloud": "Alert vachinappudu caption vinipinchu",
+    "androidSoundNote": "Note: Custom tones & voice reading Android native app lo panichestaayi. Web browser lo device default sound ring avtundi."
+  },
+  "guide": {
+    "title": "DayPilot ela use cheyyali",
+    "subtitle": "Nee schedule, time ki vachhe reminders mariyu habit streaks ni master cheyyi.",
+    "searchPlaceholder": "Guide mariyu tips lo search cheyyi...",
+    "featuresTitle": "Features & Workflows",
+    "faqTitle": "Frequently Asked Questions",
+    "troubleshootingTitle": "Reminder Troubleshooting Checklist",
+    "drawOverOtherAppsTitle": "Vere apps use chestunnappudu Reminders raavadam",
+    "drawOverOtherAppsBody": "OS security valla web browsers vere apps paina direct pop-up chupincha levu. Guarantee alerts kosam DayPilot ni PWA ga install chesi Push Notifications on cheyyi."
+  },
+  "settings": {
+    "title": "Settings & Preferences",
+    "subtitle": "Notifications, captions, language, appearance mariyu nee data ni customize chesuko.",
+    "language": {
+      "title": "Language & Localization",
+      "subtitle": "DayPilot app antha nee favorite language lo chusuko.",
+      "label": "Display Language",
+      "updated": "Language preference update aindi."
+    },
+    "profile": {
+      "title": "Account & Profile",
+      "displayName": "Display Name",
+      "email": "Email Address",
+      "saveProfile": "Name Update Cheyyi",
+      "resetPassword": "Reset Password",
+      "logout": "Log Out"
+    },
+    "appearance": {
+      "title": "Theme & Appearance",
+      "subtitle": "Light, Dark leda System automatic theme select chesuko",
+      "themeLabel": "App Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System Default"
+    },
+    "dateTime": {
+      "title": "Date & Time Preferences",
+      "weekStartsOn": "Week starts on",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "clockFormat": "Clock Format",
+      "twelveHour": "12-Hour (e.g. 2:30 PM)",
+      "twentyFourHour": "24-Hour (e.g. 14:30)",
+      "dateFormat": "Date Format",
+      "timezone": "Time Zone",
+      "autoDetect": "Auto-Detect"
+    },
+    "reminders": {
+      "title": "Notifications & Web Push",
+      "subtitle": "Real Firebase Cloud Messaging (FCM) web push & scheduled alerts.",
+      "permissionStatus": "Browser Notification Permission",
+      "granted": "Granted (Ready)",
+      "denied": "Browser lo Denied",
+      "default": "Inka permission adagaledu",
+      "unsupported": "Ee browser lo support ledu",
+      "requestPermission": "Push Notifications On Cheyyi",
+      "sendTestPush": "Real Test Notification Pampu",
+      "testingNotification": "Real FCM test notification pampistunnam...",
+      "activeTokens": "Active Registered Push Devices",
+      "noTokens": "Ee account ki active devices em levu.",
+      "defaultSnooze": "Default Snooze Duration",
+      "defaultReminders": "Default Task Reminders",
+      "atTimeOfEvent": "Event time ki",
+      "tenMinBefore": "10 minutes mundhu",
+      "oneHourBefore": "1 hour mundhu",
+      "oneDayBefore": "1 day mundhu",
+      "minutes": "{{count}} minutes",
+      "maxSnoozeCount": "Max Snooze Limit",
+      "maxSnoozeDesc": "Ee limit tarvata task complete cheyali leda repatiki postpone cheyali.",
+      "persistentInterval": "Persistent Re-Alert Interval",
+      "batteryGuide": "Battery Optimization Guide (Android/iOS)",
+      "iosHomeNote": "iOS Users: Web push kosam mundhu 'Add to Home Screen' cheyyandi",
+      "notificationHealth": "Notification Delivery Health Log",
+      "emptyLogs": "Inka notification logs em levu."
+    },
+    "categoriesSection": {
+      "title": "Categories & Tags",
+      "subtitle": "Built-in mariyu custom categories manage chesuko",
+      "add": "Kotha Category",
+      "builtInTag": "Built-in",
+      "customTag": "Custom"
+    },
+    "data": {
+      "title": "Data Management & Privacy",
+      "exportData": "Naa Data Export Cheyyi (JSON)",
+      "exporting": "Export avtundi...",
+      "deleteAccount": "Account & Data Permanently Delete Cheyyi",
+      "deleteAccountDesc": "Nee tasks, habits mariyu settings mottham permanent ga erase avtayi.",
+      "confirmDeleteTitle": "Account mottham delete cheyyala?",
+      "confirmDeleteMessage": "Idi irreversible. Nee data antha permanently delete aipotundi."
+    },
+    "saveAll": "Preferences Save Cheyyi"
+  },
+  "errors": {
+    "generic": "Edo problem vachindi. Malli try cheyyi.",
+    "networkError": "Internet connection error. Network check cheyyi.",
+    "authFailed": "Login avvaledu. Details check cheyyi.",
+    "permissionDenied": "Browser lo notification permission block aindi.",
+    "fcmNotConfigured": "Configuration lo VAPID key missing.",
+    "taskNotFound": "Task dorakaledu."
+  },
+  "validation": {
+    "required": "Ee field compulsory",
+    "invalidEmail": "Valid email address enter cheyyi",
+    "passwordMin": "Password minimum 6 characters undali",
+    "nameRequired": "Nee peru enter cheyyi"
+  }
+}

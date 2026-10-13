@@ -1,0 +1,8 @@
+{
+  "name": "Remix DayPilot",
+  "description": "Mobile-first reminder and daily planner web app with customizable categories, habit tracking, and task management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

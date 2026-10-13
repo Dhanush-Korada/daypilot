@@ -1,0 +1,472 @@
+{
+  "common": {
+    "appName": "DayPilot",
+    "save": "Save karo",
+    "saved": "Save ho gaya",
+    "saving": "Save ho raha hai...",
+    "cancel": "Cancel",
+    "delete": "Delete karo",
+    "deleting": "Delete ho raha hai...",
+    "edit": "Edit",
+    "add": "Add karo",
+    "create": "Create karo",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "search": "Search karo",
+    "filter": "Filter",
+    "all": "Sabhi",
+    "today": "Aaj",
+    "yesterday": "Kal (gaya)",
+    "tomorrow": "Kal (aane wala)",
+    "done": "Done",
+    "pending": "Pending",
+    "status": "Status",
+    "actions": "Actions",
+    "confirm": "Confirm karo",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "noData": "Koi data nahi hai",
+    "refresh": "Refresh",
+    "snooze": "Snooze karo",
+    "remindMeLater": "Baad mein yaad dilana",
+    "time": "Time",
+    "date": "Date",
+    "category": "Category",
+    "priority": "Priority",
+    "reminder": "Reminder",
+    "offlineNotice": "Aap offline ho. Changes locally save ho gaye hain.",
+    "installApp": "App install karo",
+    "installed": "App install ho gaya"
+  },
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "calendar": "Calendar",
+    "habits": "Habits",
+    "templates": "Templates",
+    "guide": "Help Guide",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "auth": {
+    "welcomeTitle": "DayPilot ke saath apna din plan karo",
+    "welcomeSubtitle": "Daily planning, habit streaks aur time par accurate reminders.",
+    "signInTab": "Sign In",
+    "signUpTab": "Account Banao",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "rahul@example.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Kam se kam 6 characters",
+    "displayNameLabel": "Aapka Naam",
+    "displayNamePlaceholder": "Rahul Sharma",
+    "signInButton": "DayPilot mein Sign In karo",
+    "signUpButton": "Free Account Banao",
+    "authenticating": "Connecting...",
+    "orContinueWith": "ya iske saath continue karo",
+    "googleSignIn": "Google ke saath Continue karo",
+    "selectLanguage": "Language",
+    "passwordHint": "Secure password ke liye kam se kam 6 characters hone chahiye",
+    "termsAgree": "Sign up karke aap hamari Terms aur Privacy Policy se agree karte ho.",
+    "alreadyHaveAccount": "Pehle se account hai? Sign In karo",
+    "dontHaveAccount": "Account nahi hai? Sign Up karo"
+  },
+  "home": {
+    "greetingMorning": "Good morning",
+    "greetingAfternoon": "Good afternoon",
+    "greetingEvening": "Good evening",
+    "greetingNight": "Good night",
+    "todayOverview": "Aaj Ka Overview",
+    "pendingTasks": "Pending Tasks",
+    "completedTasks": "Completed",
+    "habitsToday": "Habits Tracked",
+    "streak": "Current Streak",
+    "days": "days",
+    "quickAdd": "Quick Add Task",
+    "quickAddPlaceholder": "Aaj aap kya achieve karna chahte ho?",
+    "noTasksToday": "Aaj ke sabhi tasks complete ho gaye! 🎉",
+    "noTasksSubtitle": "Naya task add karo ya ready-made template pick karo.",
+    "upcomingReminders": "Upcoming Reminders",
+    "viewAll": "Sabhi dekhein",
+    "progress": "Daily Progress",
+    "tasksRemaining": "{{count}} tasks bache hain"
+  },
+  "tasks": {
+    "title": "Tasks & Reminders",
+    "pageTitle": "Task Management",
+    "pageSubtitle": "Apne daily reminders ko organize karo, priority set karo aur track karo",
+    "addTask": "Task Add Karo",
+    "newTask": "Naya Task",
+    "editTask": "Task Edit Karo",
+    "taskTitle": "Task Title",
+    "taskTitlePlaceholder": "e.g., Bijli ka bill bharna hai",
+    "description": "Notes & Description",
+    "descriptionPlaceholder": "Extra notes, link ya checklist add karo...",
+    "dueDate": "Due Date",
+    "dueTime": "Time",
+    "priorityLabel": "Priority Level",
+    "categoryLabel": "Category",
+    "recurrenceLabel": "Repeat / Recurrence",
+    "recurrenceNone": "Repeat nahi hoga",
+    "recurrenceDaily": "Daily",
+    "recurrenceWeekly": "Weekly",
+    "recurrenceMonthly": "Monthly",
+    "recurrenceCustom": "Custom",
+    "reminderLevelLabel": "Reminder Alert Style",
+    "reminderStyle": {
+      "standard": "Standard notification",
+      "persistent": "Persistent (Done hone tak baar baar bajega)",
+      "silent": "Silent notification",
+      "normal": "Normal notification",
+      "important": "Important notification"
+    },
+    "priorities": {
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority",
+      "urgent": "Urgent"
+    },
+    "markDone": "Done mark karo",
+    "markIncomplete": "Incomplete mark karo",
+    "snoozeOptions": "Snooze Reminder",
+    "snooze5Min": "5 minutes",
+    "snooze10Min": "10 minutes",
+    "snooze15Min": "15 minutes",
+    "snooze30Min": "30 minutes",
+    "snooze1Hour": "1 hour",
+    "deleteConfirmTitle": "Task Delete Karein?",
+    "deleteConfirmMessage": "Kya aap sach mein ye task delete karna chahte ho? Ye undo nahi ho sakta.",
+    "saveAsTemplate": "Personal Template banao",
+    "filterAll": "Sabhi Tasks",
+    "filterPending": "Pending",
+    "filterCompleted": "Completed",
+    "noTasksFound": "Koi task nahi mila",
+    "overdue": "Time nikal gaya",
+    "overdueCount": "{{count}} Overdue",
+    "postponeTomorrow": "Kal ke liye postpone karo",
+    "searchPlaceholder": "Title ya notes mein search karo..."
+  },
+  "categories": {
+    "title": "Categories",
+    "work": "Work & Business",
+    "personal": "Personal",
+    "health": "Health & Care",
+    "fitness": "Fitness & Workout",
+    "study": "Study & Learning",
+    "finance": "Finance & Bills",
+    "chores": "Ghar Ke Kaam",
+    "wellbeing": "Digital Wellbeing",
+    "reading": "Reading & Books",
+    "family": "Family & Friends",
+    "birthdays": "Birthdays & Events",
+    "habitsCategory": "Daily Habits",
+    "other": "Other",
+    "addCategory": "Category Add Karo",
+    "newCategory": "Nayi Custom Category",
+    "editCategory": "Category Edit Karo",
+    "categoryName": "Category Ka Naam",
+    "categoryColor": "Color",
+    "accentColor": "Accent Color",
+    "selectIcon": "Icon Chuno",
+    "deleteCategoryConfirm": "Ye category delete karni hai?"
+  },
+  "calendar": {
+    "title": "Calendar & Schedule",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "noTasksOnDate": "Is date par koi task scheduled nahi hai.",
+    "scheduleTask": "Task Schedule Karo",
+    "todayButton": "Today",
+    "quickJump": "Quick Jump"
+  },
+  "habits": {
+    "title": "Habits Tracker",
+    "subtitle": "Daily check-ins, targets aur streaks ke saath consistency maintain karo",
+    "addHabit": "Nayi Habit",
+    "editHabit": "Habit Edit Karo",
+    "habitName": "Habit Ka Naam",
+    "habitNamePlaceholder": "e.g., Subah 20 min walk",
+    "frequency": "Frequency",
+    "frequencies": {
+      "daily": "Daily",
+      "weekdays": "Weekdays (Mon-Fri)",
+      "weekends": "Weekends (Sat-Sun)",
+      "custom": "Selected Days"
+    },
+    "targetGoal": "Daily Target / Goal (Optional)",
+    "targetGoalPlaceholder": "e.g. 20 mins, 2 liters, 50 pages",
+    "target": "Target",
+    "reminderTime": "Daily Reminder Time (Optional)",
+    "streakDays": "{{count}} days streak",
+    "bestStreak": "Best: {{count}}d",
+    "weeklyDone": "Is week {{done}}/7 complete hue",
+    "todayCompleted": "Aaj Complete Hua",
+    "checkIn": "Check In karo",
+    "markDone": "Done",
+    "undo": "Undo",
+    "noHabits": "Abhi tak koi habit nahi banayi",
+    "noHabitsDesc": "Daily tracking aur streaks ke saath apni pehli habit shuru karo.",
+    "createFirstHabit": "Pehli Habit Banao",
+    "archiveHabit": "Archive Karo",
+    "deleteTitle": "Habit Delete Karein?",
+    "deleteMessage": "Kya aap sach mein ye habit delete karna chahte ho? Pura check-in history erase ho jayega.",
+    "saved": "Habit successfully save ho gayi"
+  },
+  "templates": {
+    "title": "Task Templates",
+    "subtitle": "1-Tap mein ready-made habits aur tasks apne planner mein add karo.",
+    "allCategories": "Sabhi Categories",
+    "curatedTab": "Ready-made Templates",
+    "savedTab": "Personal Saved Templates",
+    "savedSubtitle": "Aapke apne tasks se banaye gaye templates",
+    "addInOneTap": "1-Tap Mein Add Karo",
+    "editAndAdd": "Edit Karke Add Karo",
+    "createPersonal": "Naya Personal Template",
+    "templateName": "Template Ka Naam",
+    "templateNamePlaceholder": "e.g., Sunday House Deep Clean",
+    "saveCurrentTask": "Template Banakar Save Karo",
+    "addedToTasks": "Planner mein task add ho gaya!",
+    "noTemplatesFound": "Koi template nahi mila.",
+    "groups": {
+      "health": "Health & Wellness",
+      "fitness": "Fitness & Movement",
+      "study": "Study & Learning",
+      "work": "Work & Productivity",
+      "personal": "Personal & Life",
+      "digitalWellbeing": "Digital Wellbeing"
+    },
+    "chips": {
+      "every2Hrs": "Every 2 Hrs",
+      "every45Min": "Every 45 Min",
+      "yearly": "Yearly",
+      "daily": "Daily",
+      "weekdays": "Weekdays",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "items": {
+      "drinkWater": {
+        "title": "Har 2 ghante mein paani piyo",
+        "desc": "Body ko hydrate rakho. Refreshed rehne ke liye ek glass paani zaroor piyo."
+      },
+      "takeMedicine": {
+        "title": "Medicine lo",
+        "desc": "Doctor ki batayi hui medicines aur vitamins time par khane ke baad lo."
+      },
+      "stretchBreak": {
+        "title": "Stretching break lo",
+        "desc": "Khade hokar body stretch karo, shoulder aur neck ki stiffness kam hogi."
+      },
+      "windDown": {
+        "title": "Sone ki taiyari aur relax",
+        "desc": "Kamre ki lights dim karo, phone side mein rakho aur 8 ghante ki acchi neend lo."
+      },
+      "morningWorkout": {
+        "title": "Subah ka workout karo",
+        "desc": "30-45 minutes workout, jogging ya yoga complete karo."
+      },
+      "eveningWalk": {
+        "title": "Shaam ki walk",
+        "desc": "Mind relax karne ke liye bahar 20-30 minutes walk karo."
+      },
+      "coreMobility": {
+        "title": "Core & mobility session",
+        "desc": "Back relief aur flexibility ke liye 15 mins exercises karo."
+      },
+      "reviseNotes": {
+        "title": "Notes revise karo",
+        "desc": "Aaj padhe gaye topics aur notes ko ek baar revise kar lo."
+      },
+      "read20Pages": {
+        "title": "Book ke 20 pages padho",
+        "desc": "Apni current book se 20 pages focus ke saath padho."
+      },
+      "languageDrill": {
+        "title": "Language practice karo",
+        "desc": "Nayi language ya vocabulary ke liye 15 minutes practice karo."
+      },
+      "dailyPlanning": {
+        "title": "Subah 9 AM planning",
+        "desc": "Aaj ke top 3 main goals plan karo aur calendar check karo."
+      },
+      "weeklyReview": {
+        "title": "Weekly review karo",
+        "desc": "Completed tasks check karke aane wale week ka plan banao."
+      },
+      "inboxZero": {
+        "title": "Inbox emails clear karo",
+        "desc": "Important mails ka reply do aur resolved emails archive karo."
+      },
+      "callFamily": {
+        "title": "Family ko call karo",
+        "desc": "Parents ya family ko call karke haal-chaal pucho."
+      },
+      "payBills": {
+        "title": "Monthly bills pay karo",
+        "desc": "Bijli, rent aur wifi bills time par bharo aur budget update karo."
+      },
+      "birthdayYearly": {
+        "title": "Birthday wish karo",
+        "desc": "Close friends aur family ko unke birthday par dil se wish karo."
+      },
+      "homeDeclutter": {
+        "title": "Ghar ki safai aur reset",
+        "desc": "Desk clean karo, laundry complete karo aur room set karo."
+      },
+      "scrollingBreak": {
+        "title": "Screen se break lo",
+        "desc": "Kam se kam 2 minute screen se door kisi cheez par focus karo."
+      },
+      "screenCurfew": {
+        "title": "Sone se pehle screen off",
+        "desc": "Acchi neend ke liye sone se 45 minutes pehle phone dusre room mein rakh do."
+      }
+    }
+  },
+  "captions": {
+    "title": "Smart Reminders & Captions",
+    "subtitle": "Dost ki tarah baat karne wale reminders, jo snooze karne par thoda firm ho jaate hain.",
+    "enableCaptions": "Smart Adaptive Captions",
+    "enableCaptionsDesc": "Miss hue ya snooze kiye tasks par motivating alert message dikhayein.",
+    "intensity": "Caption Escalation Tone",
+    "gentle": "Gentle Nudge",
+    "gentleDesc": "Level 1 only: Polite & friendly encouragement.",
+    "friendly": "Firm & Caring (Default)",
+    "friendlyDesc": "Levels 1 & 2: Snooze karne par thoda firm ho jaata hai.",
+    "roast": "Friend Roast",
+    "roastDesc": "Levels 1, 2 & 3: Chronic procrastination par funny aur sachhe roasts.",
+    "maxSnoozes": "Action Se Pehle Max Snooze",
+    "maxSnoozesDesc": "Is limit ke baad snooze band ho jayega; task complete karna padega ya kal par dalna padega.",
+    "snoozeCountLabel": "{{max}} mein se {{current}} snoozes use hue",
+    "snoozeLimitReachedDesc": "Snooze limit ({{max}} times) khatam ho gayi. Abhi complete karo ya kal par move karo.",
+    "doItNow": "Abhi karo",
+    "moveToTomorrow": "Kal par daalo",
+    "gentleLevel": "Friendly Nudge (Level 1)",
+    "firmLevel": "Firm Alert (Level 2)",
+    "roastLevel": "Friend Roast (Level 3)",
+    "previewTitle": "In-App Caption Preview",
+    "previewDesc": "{{language}} mein aapke reminders kaise lagenge, check karo. Ye in-app preview hai, real notification nahi.",
+    "showAnother": "Dusra dikhao",
+    "seedButton": "Firestore mein Captions Load Karo (Developer)",
+    "seedSuccess": "{{count}} captions Firestore mein successfully upload ho gaye.",
+    "tonesTitle": "Notification Alert Tone",
+    "toneChime": "Classic Chime",
+    "toneSoft": "Soft Bell",
+    "toneAlert": "Urgent Alert",
+    "toneVoice": "Voice Caption Padhegi",
+    "toneSilent": "Silent",
+    "readAloud": "Alert aane par caption bol kar sunao",
+    "androidSoundNote": "Note: Custom tones aur voice reading Android native app mein kaam karti hai. Web version phone ka default notification sound bajata hai."
+  },
+  "guide": {
+    "title": "DayPilot Kaise Use Karein",
+    "subtitle": "Apne schedule, time par reminders aur habit streaks ko master karo.",
+    "searchPlaceholder": "Guide aur tips mein search karo...",
+    "featuresTitle": "Features & Workflows",
+    "faqTitle": "Frequently Asked Questions",
+    "troubleshootingTitle": "Reminder Troubleshooting Checklist",
+    "drawOverOtherAppsTitle": "Dusre Apps Use Karte Waqt Reminders Paana",
+    "drawOverOtherAppsBody": "OS security restrictions ki wajah se web browsers dusre apps ke upar pop-up nahi dikha sakte. Guaranteed alerts paane ke liye DayPilot ko PWA ke roop mein install karo aur Push Notifications enable rakho."
+  },
+  "settings": {
+    "title": "Settings & Preferences",
+    "subtitle": "Notifications, captions, language, theme aur apna data customize karo.",
+    "language": {
+      "title": "Language & Localization",
+      "subtitle": "DayPilot app ko apni pasandeeda language mein chalao.",
+      "label": "Display Language",
+      "updated": "Language preference update ho gayi."
+    },
+    "profile": {
+      "title": "Account & Profile",
+      "displayName": "Display Name",
+      "email": "Email Address",
+      "saveProfile": "Name Update Karo",
+      "resetPassword": "Reset Password",
+      "logout": "Log Out"
+    },
+    "appearance": {
+      "title": "Theme & Appearance",
+      "subtitle": "Light, Dark ya System automatic theme choose karo",
+      "themeLabel": "App Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System Default"
+    },
+    "dateTime": {
+      "title": "Date & Time Preferences",
+      "weekStartsOn": "Week starts on",
+      "sunday": "Sunday",
+      "monday": "Monday",
+      "clockFormat": "Clock Format",
+      "twelveHour": "12-Hour (e.g. 2:30 PM)",
+      "twentyFourHour": "24-Hour (e.g. 14:30)",
+      "dateFormat": "Date Format",
+      "timezone": "Time Zone",
+      "autoDetect": "Auto-Detect"
+    },
+    "reminders": {
+      "title": "Notifications & Web Push",
+      "subtitle": "Real Firebase Cloud Messaging (FCM) web push & scheduled alerts.",
+      "permissionStatus": "Browser Notification Permission",
+      "granted": "Granted (Ready)",
+      "denied": "Browser mein Denied",
+      "default": "Abhi nahi maangi gayi",
+      "unsupported": "Is browser mein support nahi hai",
+      "requestPermission": "Push Notifications Enable Karo",
+      "sendTestPush": "Real Test Notification Bhejo",
+      "testingNotification": "Real FCM test notification bhej rahe hain...",
+      "activeTokens": "Active Registered Push Devices",
+      "noTokens": "Is account ke liye koi registered devices nahi hain.",
+      "defaultSnooze": "Default Snooze Duration",
+      "defaultReminders": "Default Task Reminders",
+      "atTimeOfEvent": "Event ke time par",
+      "tenMinBefore": "10 minutes pehle",
+      "oneHourBefore": "1 hour pehle",
+      "oneDayBefore": "1 day pehle",
+      "minutes": "{{count}} minutes",
+      "maxSnoozeCount": "Max Snooze Limit",
+      "maxSnoozeDesc": "Is limit ke baad task complete karna padega ya kal par dalna padega.",
+      "persistentInterval": "Persistent Re-Alert Interval",
+      "batteryGuide": "Battery Optimization Guide (Android/iOS)",
+      "iosHomeNote": "iOS Users: Web push ke liye pehle 'Add to Home Screen' karein",
+      "notificationHealth": "Notification Delivery Health Log",
+      "emptyLogs": "Abhi koi delivery records log nahi hue."
+    },
+    "categoriesSection": {
+      "title": "Categories & Tags",
+      "subtitle": "Built-in aur custom categories manage karo",
+      "add": "Nayi Category",
+      "builtInTag": "Built-in",
+      "customTag": "Custom"
+    },
+    "data": {
+      "title": "Data Management & Privacy",
+      "exportData": "Apna Data Export Karo (JSON)",
+      "exporting": "Export ho raha hai...",
+      "deleteAccount": "Account & Data Permanently Delete Karo",
+      "deleteAccountDesc": "Aapke sabhi tasks, habits aur settings permanently delete ho jayenge.",
+      "confirmDeleteTitle": "Account permanently delete karein?",
+      "confirmDeleteMessage": "Ye irreversible action hai. Sabhi tasks aur records hamesha ke liye mit jayenge."
+    },
+    "saveAll": "Preferences Save Karo"
+  },
+  "errors": {
+    "generic": "Kuch gadbad ho gayi. Please dobara try karo.",
+    "networkError": "Internet connection error. Network check karo.",
+    "authFailed": "Login fail ho gaya. Details check karo.",
+    "permissionDenied": "Browser settings mein notification permission deny ho gayi.",
+    "fcmNotConfigured": "Configuration mein VAPID key missing hai.",
+    "taskNotFound": "Task nahi mila."
+  },
+  "validation": {
+    "required": "Ye field zaroori hai",
+    "invalidEmail": "Valid email address daalo",
+    "passwordMin": "Password kam se kam 6 characters ka hona chahiye",
+    "nameRequired": "Apna naam daalo"
+  }
+}

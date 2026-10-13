@@ -1,0 +1,215 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile document",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 320 },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "photoURL": { "type": "string", "maxLength": 500 },
+        "timezone": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Category for grouping tasks and habits",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 60 },
+        "icon": { "type": "string", "maxLength": 50 },
+        "color": { "type": "string", "maxLength": 30 },
+        "isBuiltIn": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "color", "userId"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "User task or reminder with recurrence and priority",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 2000 },
+        "categoryId": { "type": "string", "maxLength": 128 },
+        "dueAt": { "type": "string" },
+        "timezone": { "type": "string", "maxLength": 50 },
+        "priority": { "type": "string", "enum": ["low", "medium", "high"] },
+        "status": { "type": "string", "enum": ["pending", "in_progress", "completed", "cancelled"] },
+        "recurrence": { "type": "object" },
+        "reminderLevel": { "type": "string", "enum": ["normal", "important", "persistent"] },
+        "reminders": { "type": "array" },
+        "snoozeCount": { "type": "number" },
+        "snoozedUntil": { "type": "string" },
+        "completedAt": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "userId", "priority", "status", "reminderLevel"]
+    },
+    "Habit": {
+      "title": "Habit",
+      "description": "Habit tracked by user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 1000 },
+        "categoryId": { "type": "string", "maxLength": 128 },
+        "frequency": { "type": "string", "enum": ["daily", "weekdays", "weekends", "custom"] },
+        "targetDaysPerWeek": { "type": "number" },
+        "reminderTime": { "type": "string", "maxLength": 10 },
+        "streak": { "type": "number" },
+        "bestStreak": { "type": "number" },
+        "archived": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["title", "userId", "frequency"]
+    },
+    "HabitLog": {
+      "title": "HabitLog",
+      "description": "Daily habit completion log",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "habitId": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "date": { "type": "string", "maxLength": 10 },
+        "completed": { "type": "boolean" },
+        "completedAt": { "type": "string" }
+      },
+      "required": ["habitId", "userId", "date", "completed"]
+    },
+    "UserTemplate": {
+      "title": "UserTemplate",
+      "description": "Reusable routine, habit or task template",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "type": { "type": "string", "enum": ["task", "habit", "routine"] },
+        "templateData": { "type": "object" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name", "type", "userId"]
+    },
+    "NotificationLog": {
+      "title": "NotificationLog",
+      "description": "Log of reminder alerts sent or fired",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "taskId": { "type": "string", "maxLength": 128 },
+        "habitId": { "type": "string", "maxLength": 128 },
+        "message": { "type": "string", "maxLength": 500 },
+        "sentAt": { "type": "string" },
+        "status": { "type": "string", "enum": ["sent", "failed", "dismissed"] }
+      },
+      "required": ["userId", "message", "status"]
+    },
+    "PushToken": {
+      "title": "PushToken",
+      "description": "Push notification token registration",
+      "type": "object",
+      "properties": {
+        "token": { "type": "string", "maxLength": 500 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "device": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["token", "userId"]
+    },
+    "UserSettings": {
+      "title": "UserSettings",
+      "description": "User application settings",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "maxLength": 128 },
+        "theme": { "type": "string", "enum": ["light", "dark", "system"] },
+        "timezone": { "type": "string", "maxLength": 50 },
+        "soundEnabled": { "type": "boolean" },
+        "hapticFeedback": { "type": "boolean" },
+        "defaultReminderOffset": { "type": "number" },
+        "weekStartsOn": { "type": "number" },
+        "language": { "type": "string", "enum": ["en", "te", "hi", "te-Latn", "hi-Latn"] },
+        "captionIntensity": { "type": "string", "enum": ["gentle", "friendly", "roast"] },
+        "captionsEnabled": { "type": "boolean" },
+        "maxSnoozeCount": { "type": "number" },
+        "notificationTone": { "type": "string", "maxLength": 50 },
+        "readCaptionAloud": { "type": "boolean" },
+        "recentCaptionIds": { "type": "array" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "theme"]
+    },
+    "Caption": {
+      "title": "Caption",
+      "description": "Smart adaptive reminder caption for procrastination and overdue reminders",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "language": { "type": "string", "enum": ["en", "te", "hi", "te-Latn", "hi-Latn"] },
+        "level": { "type": "number", "enum": [1, 2, 3] },
+        "context": { "type": "string", "maxLength": 50 },
+        "text": { "type": "string", "maxLength": 1000 },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "language", "level", "text", "active"]
+    }
+  },
+  "firestore": {
+    "/captions/{captionId}": {
+      "schema": "Caption",
+      "description": "Global smart captions collection readable by signed in users"
+    },
+    "/users/{userId}/profile/{profileId}": {
+      "schema": "UserProfile",
+      "description": "User profile document"
+    },
+    "/users/{userId}/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Categories for user tasks and habits"
+    },
+    "/users/{userId}/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Tasks scheduled by user"
+    },
+    "/users/{userId}/habits/{habitId}": {
+      "schema": "Habit",
+      "description": "Habits tracked by user"
+    },
+    "/users/{userId}/habitLogs/{logId}": {
+      "schema": "HabitLog",
+      "description": "Habit execution logs"
+    },
+    "/users/{userId}/userTemplates/{templateId}": {
+      "schema": "UserTemplate",
+      "description": "Templates saved by user"
+    },
+    "/users/{userId}/notificationLog/{logId}": {
+      "schema": "NotificationLog",
+      "description": "Notification logs"
+    },
+    "/users/{userId}/pushTokens/{tokenId}": {
+      "schema": "PushToken",
+      "description": "Push device tokens"
+    },
+    "/users/{userId}/settings/{settingsId}": {
+      "schema": "UserSettings",
+      "description": "User app settings"
+    }
+  }
+}
